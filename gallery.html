@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | KR Melody Music Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🎵 <span>KR Melody</span>
+            <small>Music Academy</small>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Gallery Hero -->
+    <section class="page-hero">
+
+        <div>
+
+            <p class="section-label">MOMENTS OF MUSIC</p>
+
+            <h1>Our <span>Gallery</span></h1>
+
+            <p>
+                Explore the musical journey at KR Melody Music Academy.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Gallery Introduction -->
+    <section class="gallery-intro">
+
+        <p class="section-label">OUR MUSICAL WORLD</p>
+
+        <h2>Moments That <span>Inspire</span></h2>
+
+        <p>
+            From practice sessions to stage performances,
+            every moment at KR Melody is a part of the journey.
+        </p>
+
+    </section>
+
+
+    <!-- Gallery -->
+    <section class="gallery-section">
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item"
+                onclick="openGallery('images/piano.jpg')">
+
+                <img src="images/piano.jpg" alt="Piano Class">
+
+                <div class="gallery-overlay">
+                    <h3>Piano Sessions</h3>
+                    <span>View Image →</span>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item"
+                onclick="openGallery('images/guitar.jpg')">
+
+                <img src="images/guitar.jpg" alt="Guitar Class">
+
+                <div class="gallery-overlay">
+                    <h3>Guitar Classes</h3>
+                    <span>View Image →</span>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item"
+                onclick="openGallery('images/singing.jpg')">
+
+                <img src="images/singing.jpg" alt="Singing Class">
+
+                <div class="gallery-overlay">
+                    <h3>Vocal Training</h3>
+                    <span>View Image →</span>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item"
+                onclick="openGallery('images/violin.jpg')">
+
+                <img src="images/violin.jpg" alt="Violin Class">
+
+                <div class="gallery-overlay">
+                    <h3>Violin Practice</h3>
+                    <span>View Image →</span>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item"
+                onclick="openGallery('images/drums.jpg')">
+
+                <img src="images/drums.jpg" alt="Drums Class">
+
+                <div class="gallery-overlay">
+                    <h3>Drum Sessions</h3>
+                    <span>View Image →</span>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item"
+                onclick="openGallery('images/keyboard.jpg')">
+
+                <img src="images/keyboard.jpg" alt="Music Academy">
+
+                <div class="gallery-overlay">
+                    <h3>keyboard session</h3>
+                    <span>View Image →</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Image Popup -->
+    <div id="galleryModal" class="gallery-modal">
+
+        <span class="close-gallery"
+            onclick="closeGallery()">
+            &times;
+        </span>
+
+        <img id="galleryModalImage"
+            src=""
+            alt="Gallery Preview">
+
+    </div>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <h2>Be Part of Our Musical Journey</h2>
+
+        <p>
+            Join KR Melody Music Academy and create your own musical moments.
+        </p>
+
+        <a href="contact.html" class="btn">
+            Join Us
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h2>🎵 KR Melody</h2>
+                <p>Music Academy</p>
+            </div>
+
+            <div>
+                <p>© 2026 KR Melody Music Academy</p>
+                <p>Learn • Play • Perform</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

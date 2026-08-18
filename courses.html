@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Courses | KR Melody Music Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🎵 <span>KR Melody</span>
+            <small>Music Academy</small>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html" class="active">Courses</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+
+        <div>
+
+            <p class="section-label">DISCOVER YOUR PASSION</p>
+
+            <h1>Our <span>Music Courses</span></h1>
+
+            <p>
+                Learn, practice and grow with professional guidance.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Courses Introduction -->
+    <section class="courses-intro">
+
+        <p class="section-label">LEARN WITH US</p>
+
+        <h2>Find Your <span>Musical Voice</span></h2>
+
+        <p>
+            Whether you are a beginner or an experienced learner,
+            we have courses designed to help you develop your
+            musical skills and confidence.
+        </p>
+
+    </section>
+
+
+    <!-- Course Cards -->
+    <section class="all-courses">
+
+        <div class="course-grid">
+
+
+            <!-- Piano -->
+            <div class="course-card">
+
+                <img src="images/piano.jpg" alt="Piano Course">
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        BEGINNER TO ADVANCED
+                    </span>
+
+                    <h3>🎹 Piano</h3>
+
+                    <p>
+                        Learn piano fundamentals, chords, melodies,
+                        scales and performance techniques.
+                    </p>
+
+                    <div class="course-info">
+                        <span>⏱ 3 Months</span>
+                        <span>👤 All Ages</span>
+                    </div>
+
+                    <button
+                        class="enroll-btn"
+                        onclick="enrollCourse('Piano')">
+                        Enroll Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Guitar -->
+            <div class="course-card">
+
+                <img src="images/guitar.jpg" alt="Guitar Course">
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        BEGINNER TO ADVANCED
+                    </span>
+
+                    <h3>🎸 Guitar</h3>
+
+                    <p>
+                        Master chords, strumming, fingerstyle and
+                        popular song techniques.
+                    </p>
+
+                    <div class="course-info">
+                        <span>⏱ 3 Months</span>
+                        <span>👤 All Ages</span>
+                    </div>
+
+                    <button
+                        class="enroll-btn"
+                        onclick="enrollCourse('Guitar')">
+                        Enroll Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Vocal -->
+            <div class="course-card">
+
+                <img src="images/singing.jpg" alt="Vocal Singing">
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        BEGINNER TO ADVANCED
+                    </span>
+
+                    <h3>🎤 Vocal Singing</h3>
+
+                    <p>
+                        Improve your voice, pitch, rhythm and
+                        singing confidence.
+                    </p>
+
+                    <div class="course-info">
+                        <span>⏱ 3 Months</span>
+                        <span>👤 All Ages</span>
+                    </div>
+
+                    <button
+                        class="enroll-btn"
+                        onclick="enrollCourse('Vocal Singing')">
+                        Enroll Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Violin -->
+            <div class="course-card">
+
+                <img src="images/violin.jpg" alt="Violin Course">
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        BEGINNER TO ADVANCED
+                    </span>
+
+                    <h3>🎻 Violin</h3>
+
+                    <p>
+                        Learn violin techniques, notes, rhythm
+                        and classical performance.
+                    </p>
+
+                    <div class="course-info">
+                        <span>⏱ 3 Months</span>
+                        <span>👤 All Ages</span>
+                    </div>
+
+                    <button
+                        class="enroll-btn"
+                        onclick="enrollCourse('Violin')">
+                        Enroll Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Drums -->
+            <div class="course-card">
+
+                <img src="images/drums.jpg" alt="Drums Course">
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        BEGINNER TO ADVANCED
+                    </span>
+
+                    <h3>🥁 Drums</h3>
+
+                    <p>
+                        Develop rhythm, timing and coordination
+                        through practical drum training.
+                    </p>
+
+                    <div class="course-info">
+                        <span>⏱ 3 Months</span>
+                        <span>👤 All Ages</span>
+                    </div>
+
+                    <button
+                        class="enroll-btn"
+                        onclick="enrollCourse('Drums')">
+                        Enroll Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Keyboard -->
+            <div class="course-card">
+
+                <img src="images/keyboard.jpg" alt="Keyboard Course">
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        BEGINNER TO ADVANCED
+                    </span>
+
+                    <h3>🎼 Keyboard</h3>
+
+                    <p>
+                        Learn keyboard basics, chords, melodies
+                        and popular music.
+                    </p>
+
+                    <div class="course-info">
+                        <span>⏱ 3 Months</span>
+                        <span>👤 All Ages</span>
+                    </div>
+
+                    <button
+                        class="enroll-btn"
+                        onclick="enrollCourse('Keyboard')">
+                        Enroll Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <h2>Ready to Learn Music?</h2>
+
+        <p>
+            Choose your favorite course and start your journey today.
+        </p>
+
+        <a href="contact.html" class="btn">
+            Contact Us
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h2>🎵 KR Melody</h2>
+                <p>Music Academy</p>
+            </div>
+
+            <div>
+                <p>© 2026 KR Melody Music Academy</p>
+                <p>Learn • Play • Perform</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

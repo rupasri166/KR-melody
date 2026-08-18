@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | KR Melody Music Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🎵 <span>KR Melody</span>
+            <small>Music Academy</small>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+
+        <div>
+
+            <p class="section-label">GET IN TOUCH</p>
+
+            <h1>Contact <span>KR Melody</span></h1>
+
+            <p>
+                We would love to hear from you.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+
+            <p class="section-label">LET'S CONNECT</p>
+
+            <h2>
+                Start Your
+                <span>Musical Journey</span>
+            </h2>
+
+            <p class="contact-description">
+                Have questions about our courses or want to
+                join KR Melody Music Academy? Send us a message
+                and our team will get in touch with you.
+            </p>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">📍</div>
+
+                <div>
+                    <h3>Visit Us</h3>
+                    <p>
+                        KR Melody Music Academy<br>
+                        Main Road, Kurnool<br>
+                        Andhra Pradesh, India
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">📞</div>
+
+                <div>
+                    <h3>Call Us</h3>
+                    <p>+91 98765 43210</p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">✉️</div>
+
+                <div>
+                    <h3>Email Us</h3>
+                    <p>krmelodyacademy@gmail.com</p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">🕐</div>
+
+                <div>
+                    <h3>Opening Hours</h3>
+                    <p>
+                        Monday – Saturday<br>
+                        9:00 AM – 7:00 PM
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+
+            <h2>Send Us a Message</h2>
+
+            <p>
+                Fill in the details below and we will contact you soon.
+            </p>
+
+
+            <form id="contactForm" onsubmit="submitForm(event)">
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter phone number"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="course">
+                        Interested Course
+                    </label>
+
+                    <select id="course" required>
+
+                        <option value="">
+                            Select a course
+                        </option>
+
+                        <option value="Piano">
+                            Piano
+                        </option>
+
+                        <option value="Guitar">
+                            Guitar
+                        </option>
+
+                        <option value="Vocal Singing">
+                            Vocal Singing
+                        </option>
+
+                        <option value="Violin">
+                            Violin
+                        </option>
+
+                        <option value="Drums">
+                            Drums
+                        </option>
+
+                        <option value="Keyboard">
+                            Keyboard
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        rows="5"
+                        placeholder="Write your message..."
+                        required></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-btn">
+
+                    Send Message →
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Simple Location Section -->
+    <section class="location-section">
+
+        <div class="location-content">
+
+            <p class="section-label">
+                FIND US
+            </p>
+
+            <h2>
+                Visit <span>KR Melody</span>
+            </h2>
+
+            <p>
+                Come visit our academy and experience
+                the joy of learning music.
+            </p>
+
+            <div class="location-box">
+
+                📍 KR Melody Music Academy<br>
+                Main Road, Kurnool<br>
+                Andhra Pradesh, India
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <h2>Let Your Music Begin</h2>
+
+        <p>
+            Your musical journey starts with one simple step.
+        </p>
+
+        <a href="courses.html" class="btn">
+            Explore Courses
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h2>🎵 KR Melody</h2>
+                <p>Music Academy</p>
+            </div>
+
+            <div>
+                <p>© 2026 KR Melody Music Academy</p>
+                <p>Learn • Play • Perform</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

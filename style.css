@@ -1,0 +1,2147 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f8f5ef;
+    color: #222;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    height: 85px;
+    background: #101827;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    color: #d4af37;
+    font-size: 25px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+}
+
+.logo small {
+    color: #f4eee2;
+    font-size: 12px;
+    font-weight: normal;
+
+    display: block;
+    margin-left: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #f5f1e8;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #d4af37;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 88vh;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 15, 28, 0.90),
+            rgba(8, 15, 28, 0.55),
+            rgba(8, 15, 28, 0.25)
+        ),
+        url("images/acedamy.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 8%;
+}
+
+.hero-content {
+    max-width: 650px;
+    color: white;
+}
+
+.subtitle {
+    color: #d4af37;
+    letter-spacing: 4px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #d4af37;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #eee;
+    max-width: 550px;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+    display: flex;
+    gap: 18px;
+}
+
+.btn {
+    display: inline-block;
+
+    background: #d4af37;
+    color: #101827;
+
+    padding: 13px 28px;
+
+    border-radius: 3px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #f0d36b;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    display: inline-block;
+
+    border: 1px solid #d4af37;
+    color: white;
+
+    padding: 12px 28px;
+
+    border-radius: 3px;
+
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: #d4af37;
+    color: #101827;
+}
+
+
+/* =========================
+   WELCOME
+========================= */
+
+.welcome {
+    padding: 100px 8%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.welcome-image img {
+    width: 100%;
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 4px;
+}
+
+.section-label {
+    color: #b28b20;
+
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.welcome-content h2,
+.section-heading h2 {
+    font-size: 43px;
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.welcome-content h2 span,
+.section-heading h2 span {
+    color: #b28b20;
+}
+
+.welcome-content p {
+    margin-bottom: 18px;
+    color: #555;
+}
+
+.text-btn {
+    color: #a17b15;
+    font-weight: bold;
+}
+
+
+/* =========================
+   HOME COURSES
+========================= */
+
+.courses-section {
+    padding: 100px 8%;
+
+    background: #101827;
+    color: white;
+}
+
+.section-heading {
+    text-align: center;
+
+    max-width: 650px;
+
+    margin: auto auto 50px;
+}
+
+.section-heading p:last-child {
+    color: #ccc;
+}
+
+.course-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.course-card {
+    background: #182235;
+
+    overflow: hidden;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+}
+
+.course-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: contain;
+}
+
+.course-content {
+    padding: 25px;
+}
+
+.course-content h3 {
+    color: #d4af37;
+
+    margin-bottom: 10px;
+}
+
+.course-content p {
+    color: #ccc;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+.course-content a {
+    color: #d4af37;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   WHY US
+========================= */
+
+.why-us {
+    padding: 100px 8%;
+}
+
+.features {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    margin-top: 50px;
+}
+
+.feature {
+    text-align: center;
+
+    padding: 35px 20px;
+
+    background: white;
+
+    border: 1px solid #eee;
+
+    transition: 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    background: #d4af37;
+
+    text-align: center;
+
+    padding: 75px 20px;
+
+    color: #101827;
+}
+
+.cta h2 {
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+}
+
+.cta .btn {
+    background: #101827;
+    color: #d4af37;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #0a101c;
+
+    color: white;
+
+    padding: 35px 8%;
+}
+
+.footer-content {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content h2 {
+    color: #d4af37;
+}
+
+.footer-content p {
+    color: #aaa;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   PAGE HERO
+========================= */
+
+.page-hero {
+    min-height: 45vh;
+
+    background:
+        linear-gradient(
+            rgba(10, 16, 28, 0.82),
+            rgba(10, 16, 28, 0.82)
+        ),
+        url("images/acedamy.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+.page-hero h1 {
+    font-size: 55px;
+
+    margin: 10px 0;
+}
+
+.page-hero h1 span {
+    color: #d4af37;
+}
+
+.page-hero p:last-child {
+    color: #ddd;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   ABOUT MAIN
+========================= */
+
+.about-main {
+    padding: 100px 8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+
+    height: 470px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+}
+
+.about-content h2 {
+    font-size: 43px;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+}
+
+.about-content h2 span {
+    color: #b28b20;
+}
+
+.about-content p {
+    color: #555;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   MISSION
+========================= */
+
+.mission-section {
+    padding: 100px 8%;
+
+    background: #101827;
+
+    color: white;
+}
+
+.mission-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    max-width: 950px;
+
+    margin: auto;
+}
+
+.mission-card {
+    background: #182235;
+
+    padding: 45px 35px;
+
+    text-align: center;
+
+    border:
+        1px solid
+        rgba(212, 175, 55, 0.2);
+
+    transition: 0.3s;
+}
+
+.mission-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #d4af37;
+}
+
+.mission-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.mission-card h3 {
+    color: #d4af37;
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+.mission-card p {
+    color: #ccc;
+}
+
+.about-features {
+    padding: 100px 8%;
+}
+
+
+/* =========================
+   COURSES PAGE
+========================= */
+
+.courses-intro {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: auto;
+
+    padding: 80px 20px 50px;
+}
+
+.courses-intro h2 {
+    font-size: 43px;
+
+    margin-bottom: 18px;
+}
+
+.courses-intro h2 span {
+    color: #b28b20;
+}
+
+.courses-intro > p:last-child {
+    color: #666;
+}
+
+.all-courses {
+    padding: 30px 8% 100px;
+}
+
+.all-courses .course-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.all-courses .course-card {
+    background: white;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    border: 1px solid #e5e1d8;
+
+    transition: 0.35s;
+}
+
+.all-courses .course-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(0, 0, 0, 0.12);
+}
+
+.all-courses .course-card img {
+    width: 100%;
+    max-width: 1000px;
+
+    height: 240px;
+
+    object-fit: contain;
+    object-position: centre;
+    {
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        overflow-x: hidden;
+    }
+}
+
+.all-courses .course-content {
+    padding: 28px;
+
+    color: #222;
+}
+
+.course-level {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #a17b15;
+
+    font-weight: bold;
+}
+
+.all-courses .course-content h3 {
+    color: #101827;
+
+    font-size: 24px;
+
+    margin: 10px 0;
+}
+
+.all-courses .course-content p {
+    color: #666;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.course-info {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 15px 0;
+
+    border-top: 1px solid #eee;
+
+    border-bottom: 1px solid #eee;
+
+    color: #666;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   PREMIUM ENROLL BUTTON
+========================= */
+
+.enroll-btn {
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 13px 20px;
+
+    background: #101827;
+
+    color: #d4af37;
+
+    border: 1px solid #d4af37;
+
+    border-radius: 30px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        color 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.enroll-btn::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 100%;
+    height: 100%;
+
+    background: #d4af37;
+
+    transition: left 0.35s ease;
+
+    z-index: 0;
+}
+
+.enroll-btn:hover::before {
+    left: 0;
+}
+
+.enroll-btn:hover {
+    color: #101827;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(180, 140, 30, 0.25);
+}
+
+.enroll-btn::after {
+    content: "  →";
+
+    position: relative;
+
+    z-index: 2;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+.enroll-btn:hover::after {
+    margin-left: 5px;
+}
+
+
+/* =========================
+   GALLERY PAGE
+========================= */
+
+.gallery-intro {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: auto;
+
+    padding: 80px 20px 50px;
+}
+
+.gallery-intro h2 {
+    font-size: 43px;
+
+    margin-bottom: 18px;
+}
+
+.gallery-intro h2 span {
+    color: #b28b20;
+}
+
+.gallery-intro p:last-child {
+    color: #666;
+}
+
+.gallery-section {
+    padding: 20px 8% 100px;
+}
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.gallery-item {
+    height: 300px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    background: #101827;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: transform 0.5s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    padding: 25px;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(10, 16, 28, 0.95)
+        );
+
+    color: white;
+
+    transform: translateY(10px);
+
+    opacity: 0;
+
+    transition: 0.4s ease;
+}
+
+.gallery-overlay h3 {
+    color: #d4af37;
+
+    margin-bottom: 5px;
+}
+
+.gallery-overlay span {
+    font-size: 13px;
+
+    color: #eee;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================
+   GALLERY MODAL
+========================= */
+
+.gallery-modal {
+    display: none;
+
+    position: fixed;
+
+    z-index: 2000;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.92);
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+.gallery-modal img {
+    max-width: 1200px;
+    max-height: 500px;
+
+    object-fit: contain;
+    object-position: centre;
+
+    border: 2px solid #d4af37;
+
+    box-shadow:
+        0 0 35px
+        rgba(212, 175, 55, 0.25);
+}
+
+.close-gallery {
+    position: absolute;
+
+    top: 25px;
+    right: 40px;
+
+    color: white;
+
+    font-size: 45px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.close-gallery:hover {
+    color: #d4af37;
+}
+
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-section {
+    padding: 100px 8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+
+/* CONTACT INFORMATION */
+
+.contact-info h2 {
+    font-size: 43px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.contact-info h2 span {
+    color: #b28b20;
+}
+
+.contact-description {
+    color: #666;
+
+    margin-bottom: 35px;
+
+    max-width: 550px;
+}
+
+
+/* CONTACT ITEMS */
+
+.contact-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+.contact-icon {
+    min-width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #101827;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+}
+
+.contact-item h3 {
+    color: #101827;
+
+    margin-bottom: 3px;
+}
+
+.contact-item p {
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-form-container {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 8px;
+
+    border: 1px solid #e5e1d8;
+
+    box-shadow:
+        0 15px 35px
+        rgba(0, 0, 0, 0.07);
+}
+
+.contact-form-container h2 {
+    font-size: 30px;
+
+    color: #101827;
+
+    margin-bottom: 5px;
+}
+
+.contact-form-container > p {
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+/* FORM */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+.form-group label {
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #333;
+
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 4px;
+
+    background: #fafafa;
+
+    color: #333;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #c5a13a;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(212, 175, 55, 0.10);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.submit-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #101827;
+
+    color: #d4af37;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #d4af37;
+
+    color: #101827;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(180, 140, 30, 0.25);
+}
+
+
+/* =========================
+   LOCATION
+========================= */
+
+.location-section {
+    padding: 80px 8%;
+
+    background: #101827;
+
+    color: white;
+
+    text-align: center;
+}
+
+.location-content {
+    max-width: 700px;
+
+    margin: auto;
+}
+
+.location-content h2 {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.location-content h2 span {
+    color: #d4af37;
+}
+
+.location-content > p {
+    color: #ccc;
+}
+
+.location-box {
+    margin: 30px auto 0;
+
+    padding: 25px;
+
+    max-width: 450px;
+
+    background: #182235;
+
+    border:
+        1px solid
+        rgba(212, 175, 55, 0.3);
+
+    border-radius: 6px;
+
+    line-height: 2;
+
+    color: #eee;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .course-grid,
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .all-courses .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    .contact-section {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 75vh;
+
+        padding: 50px 7%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .welcome {
+        grid-template-columns: 1fr;
+    }
+
+    .course-grid,
+    .features,
+    .all-courses .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 20px;
+    }
+
+    .page-hero h1 {
+        font-size: 40px;
+    }
+
+    .about-main {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .courses-intro h2,
+    .gallery-intro h2 {
+        font-size: 34px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 280px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-container {
+        padding: 25px;
+    }
+
+    .contact-info h2 {
+        font-size: 34px;
+    }
+
+    .location-content h2 {
+        font-size: 32px;
+    }
+
+    .gallery-modal {
+        padding: 20px;
+    }
+
+    .close-gallery {
+        top: 15px;
+        right: 20px;
+
+        font-size: 38px;
+    }
+}
+/* =========================
+   PREMIUM CONTACT ENHANCEMENT
+========================= */
+
+/* Contact section background */
+.contact-section {
+    position: relative;
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(212, 175, 55, 0.08),
+            transparent 30%
+        ),
+        #f8f5ef;
+}
+
+
+/* Contact information styling */
+.contact-info {
+    padding-top: 10px;
+}
+
+.contact-info .section-label {
+    position: relative;
+    display: inline-block;
+}
+
+.contact-info .section-label::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background: #d4af37;
+    margin-top: 6px;
+}
+
+
+/* Contact heading */
+.contact-info h2 {
+    font-size: 48px;
+    letter-spacing: -1px;
+}
+
+.contact-info h2 span {
+    color: #b28b20;
+}
+
+
+/* Contact description */
+.contact-description {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* Contact items */
+.contact-item {
+    padding: 15px 0;
+    transition: 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateX(7px);
+}
+
+
+/* Elegant contact icons */
+.contact-icon {
+    background: #101827;
+    color: #d4af37;
+
+    border: 1px solid rgba(212, 175, 55, 0.4);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+.contact-item:hover .contact-icon {
+    background: #d4af37;
+    color: #101827;
+
+    transform: rotate(5deg) scale(1.08);
+}
+
+
+/* Contact headings */
+.contact-item h3 {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   PREMIUM CONTACT FORM
+========================= */
+
+.contact-form-container {
+    position: relative;
+
+    padding: 45px;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #faf8f2
+        );
+
+    border: 1px solid rgba(212, 175, 55, 0.25);
+
+    box-shadow:
+        0 20px 50px rgba(16, 24, 39, 0.12);
+
+    overflow: hidden;
+}
+
+
+/* Gold top line */
+.contact-form-container::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #101827,
+            #d4af37,
+            #101827
+        );
+}
+
+
+/* Form heading */
+.contact-form-container h2 {
+    font-size: 32px;
+    letter-spacing: -0.5px;
+}
+
+
+/* Inputs */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    border: 1px solid #ddd5c5;
+
+    border-radius: 7px;
+
+    padding: 13px 15px;
+
+    background: #fff;
+
+    transition:
+        border-color 0.3s,
+        box-shadow 0.3s,
+        transform 0.3s;
+}
+
+
+/* Input hover */
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover {
+    border-color: #c5a13a;
+}
+
+
+/* Input focus */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #d4af37;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 18px rgba(212, 175, 55, 0.12);
+}
+
+
+/* Labels */
+.form-group label {
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================
+   PREMIUM SEND BUTTON
+========================= */
+
+.submit-btn {
+    position: relative;
+
+    overflow: hidden;
+
+    background: #101827;
+
+    border: 1px solid #d4af37;
+
+    letter-spacing: 1.5px;
+
+    padding: 15px;
+
+    box-shadow:
+        0 8px 20px rgba(16, 24, 39, 0.15);
+
+    transition: 0.35s;
+}
+
+.submit-btn::before {
+    content: "";
+
+    position: absolute;
+
+    left: -100%;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: #d4af37;
+
+    transition: 0.35s;
+
+    z-index: 0;
+}
+
+.submit-btn:hover::before {
+    left: 0;
+}
+
+.submit-btn:hover {
+    color: #101827;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(180, 140, 30, 0.25);
+}
+
+
+/* Keep button text above animation */
+.submit-btn {
+    isolation: isolate;
+}
+
+.submit-btn:hover {
+    position: relative;
+}
+
+
+/* =========================
+   LOCATION ENHANCEMENT
+========================= */
+
+.location-section {
+    position: relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0a101c,
+            #101827,
+            #182235
+        );
+}
+
+.location-section::before {
+    content: "♪";
+
+    position: absolute;
+
+    top: 20px;
+    left: 8%;
+
+    font-size: 70px;
+
+    color: rgba(212, 175, 55, 0.08);
+}
+
+.location-section::after {
+    content: "♫";
+
+    position: absolute;
+
+    bottom: 15px;
+    right: 8%;
+
+    font-size: 70px;
+
+    color: rgba(212, 175, 55, 0.08);
+}
+
+
+.location-box {
+    border-radius: 10px;
+
+    padding: 28px;
+
+    border: 1px solid rgba(212, 175, 55, 0.35);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.2);
+
+    transition: 0.3s;
+}
+
+.location-box:hover {
+    transform: translateY(-5px);
+
+    border-color: #d4af37;
+
+    box-shadow:
+        0 15px 35px rgba(212, 175, 55, 0.12);
+}
+
+
+/* =========================
+   CONTACT HERO ENHANCEMENT
+========================= */
+
+.page-hero {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: "♪  ♫  ♪";
+
+    position: absolute;
+
+    top: 35px;
+    right: 8%;
+
+    font-size: 45px;
+
+    color: rgba(212, 175, 55, 0.15);
+
+    letter-spacing: 15px;
+}
+
+.page-hero::after {
+    content: "♫  ♪";
+
+    position: absolute;
+
+    bottom: 25px;
+    left: 8%;
+
+    font-size: 40px;
+
+    color: rgba(212, 175, 55, 0.12);
+
+    letter-spacing: 12px;
+}
+
+
+/* =========================
+   MOBILE CONTACT
+========================= */
+
+@media (max-width: 850px) {
+
+    .contact-info h2 {
+        font-size: 40px;
+    }
+
+    .contact-form-container {
+        padding: 35px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-info h2 {
+        font-size: 34px;
+    }
+
+    .contact-form-container {
+        padding: 25px 20px;
+    }
+
+    .contact-item {
+        gap: 12px;
+    }
+
+    .contact-icon {
+        min-width: 43px;
+        height: 43px;
+        font-size: 18px;
+    }
+
+}
+/* =========================
+   ENROLLMENT PAGE
+========================= */
+
+.enrollment-section {
+    padding: 100px 8%;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* LEFT CONTENT */
+
+.enrollment-content h2 {
+    font-size: 45px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.enrollment-content h2 span {
+    color: #b28b20;
+}
+
+.enrollment-content > p:last-of-type {
+    color: #666;
+
+    max-width: 500px;
+
+    margin-bottom: 35px;
+}
+
+
+/* FEATURES */
+
+.enrollment-features {
+    display: grid;
+
+    gap: 15px;
+}
+
+.enrollment-features div {
+    background: white;
+
+    padding: 18px 20px;
+
+    border-left: 3px solid #d4af37;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.enrollment-features div:hover {
+    transform: translateX(7px);
+}
+
+.enrollment-features strong {
+    margin-left: 10px;
+
+    color: #101827;
+}
+
+
+/* =========================
+   ENROLLMENT FORM
+========================= */
+
+.enrollment-form {
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(212, 175, 55, 0.3);
+
+    box-shadow:
+        0 20px 50px rgba(16, 24, 39, 0.12);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* GOLD TOP LINE */
+
+.enrollment-form::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #101827,
+            #d4af37,
+            #101827
+        );
+}
+
+
+.enrollment-form h2 {
+    font-size: 32px;
+
+    color: #101827;
+
+    margin-bottom: 5px;
+}
+
+.enrollment-form > p {
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+/* FORM INPUTS */
+
+.enrollment-form input,
+.enrollment-form select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ddd5c5;
+
+    border-radius: 7px;
+
+    background: #fafafa;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.enrollment-form input:focus,
+.enrollment-form select:focus {
+    border-color: #d4af37;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(212, 175, 55, 0.10);
+}
+
+
+/* BUTTON */
+
+.enrollment-form .submit-btn {
+    margin-top: 5px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    .enrollment-section {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .enrollment-section {
+        padding: 70px 6%;
+    }
+
+    .enrollment-content h2 {
+        font-size: 34px;
+    }
+
+    .enrollment-form {
+        padding: 30px 22px;
+    }
+
+}
+/* =========================
+   WHY US CLICKABLE CARDS
+========================= */
+
+.feature {
+    cursor: pointer;
+}
+
+
+/* =========================
+   FEATURE POPUP
+========================= */
+
+.feature-modal {
+
+    display: none;
+
+    position: fixed;
+
+    z-index: 3000;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(5, 10, 20, 0.85);
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.feature-modal-content {
+
+    background: #f8f5ef;
+
+    width: 100%;
+    max-width: 500px;
+
+    padding: 45px 40px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    position: relative;
+
+    border: 2px solid #d4af37;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0, 0, 0, 0.3);
+
+    animation: featurePopup 0.3s ease;
+}
+
+
+@keyframes featurePopup {
+
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+
+.feature-close {
+
+    position: absolute;
+
+    top: 12px;
+    right: 20px;
+
+    font-size: 32px;
+
+    color: #101827;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.feature-close:hover {
+    color: #d4af37;
+}
+
+
+.feature-modal-icon {
+
+    font-size: 55px;
+
+    margin-bottom: 15px;
+}
+
+
+.feature-modal-content h2 {
+
+    color: #101827;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+
+.feature-modal-content p {
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+/* CLICK EFFECT */
+
+.feature:active {
+
+    transform: scale(0.97);
+
+}

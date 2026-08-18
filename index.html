@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KR Melody Music Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🎵 <span>KR Melody</span>
+            <small>Music Academy</small>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="subtitle">WELCOME TO KR MELODY</p>
+
+            <h1>
+                Where Your
+                <span>Music</span>
+                Begins
+            </h1>
+
+            <p>
+                Discover your passion for music and learn from
+                experienced instructors in a creative environment.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="courses.html" class="btn">Explore Courses</a>
+                <a href="contact.html" class="btn-outline">Join Us</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+
+        <div class="welcome-image">
+            <img src="images/banner.jpg" alt="Music Academy">
+        </div>
+
+        <div class="welcome-content">
+
+            <p class="section-label">ABOUT OUR ACADEMY</p>
+
+            <h2>
+                Learn Music.
+                <span>Live Music.</span>
+            </h2>
+
+            <p>
+                KR Melody Music Academy is a place where passion,
+                creativity and music come together. We provide
+                professional training for beginners as well as
+                passionate musicians.
+            </p>
+
+            <p>
+                Our friendly environment helps students discover
+                their musical talent and develop confidence.
+            </p>
+
+            <a href="about.html" class="text-btn">
+                Discover More →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Courses -->
+    <section class="courses-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">WHAT WE TEACH</p>
+
+            <h2>Our Popular <span>Courses</span></h2>
+
+            <p>
+                Learn your favorite instrument with expert guidance.
+            </p>
+
+        </div>
+
+
+        <div class="course-grid">
+
+            <div class="course-card">
+
+                <img src="images/piano1.jpg" alt="Piano">
+
+                <div class="course-content">
+
+                    <h3>🎹 Piano</h3>
+
+                    <p>
+                        Learn piano from basics to advanced
+                        techniques.
+                    </p>
+
+                    <a href="courses.html">Learn More →</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <img src="images/guitar1.jpg" alt="Guitar">
+
+                <div class="course-content">
+
+                    <h3>🎸 Guitar</h3>
+
+                    <p>
+                        Master chords, melodies and popular songs.
+                    </p>
+
+                    <a href="courses.html">Learn More →</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <img src="images/singing1.jpg" alt="Singing">
+
+                <div class="course-content">
+
+                    <h3>🎤 Vocal Singing</h3>
+
+                    <p>
+                        Improve your voice, pitch and singing skills.
+                    </p>
+
+                    <a href="courses.html">Learn More →</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <img src="images/violin1.jpg" alt="Violin">
+
+                <div class="course-content">
+
+                    <h3>🎻 Violin</h3>
+
+                    <p>
+                        Learn classical and modern violin techniques.
+                    </p>
+
+                    <a href="courses.html">Learn More →</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Why Choose Us -->
+<section class="why-us">
+
+    <div class="section-heading">
+
+        <p class="section-label">WHY KR MELODY</p>
+
+        <h2>Why Choose <span>Us?</span></h2>
+
+    </div>
+
+
+    <div class="features">
+
+        <!-- Expert Teachers -->
+        <div class="feature"
+             onclick="showFeature('teachers')">
+
+            <div class="feature-icon">🎓</div>
+
+            <h3>Expert Teachers</h3>
+
+            <p>
+                Learn from experienced music instructors.
+            </p>
+
+        </div>
+
+
+        <!-- Quality Training -->
+        <div class="feature"
+             onclick="showFeature('training')">
+
+            <div class="feature-icon">🎵</div>
+
+            <h3>Quality Training</h3>
+
+            <p>
+                Structured lessons for every skill level.
+            </p>
+
+        </div>
+
+
+        <!-- Performance -->
+        <div class="feature"
+             onclick="showFeature('performance')">
+
+            <div class="feature-icon">🎤</div>
+
+            <h3>Performance</h3>
+
+            <p>
+                Get opportunities to perform and grow.
+            </p>
+
+        </div>
+
+
+        <!-- Friendly Environment -->
+        <div class="feature"
+             onclick="showFeature('environment')">
+
+            <div class="feature-icon">❤️</div>
+
+            <h3>Friendly Environment</h3>
+
+            <p>
+                A comfortable space to learn and enjoy music.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Feature Popup -->
+<div id="featureModal" class="feature-modal">
+
+    <div class="feature-modal-content">
+
+        <span class="feature-close"
+              onclick="closeFeature()">×</span>
+
+        <div id="featureIcon"
+             class="feature-modal-icon">
+        </div>
+
+        <h2 id="featureTitle"></h2>
+
+        <p id="featureText"></p>
+
+        <button class="submit-btn"
+                onclick="closeFeature()">
+            Close
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Call To Action -->
+    <section class="cta">
+
+        <h2>Ready to Start Your Musical Journey?</h2>
+
+        <p>
+            Join KR Melody Music Academy and let your talent shine.
+        </p>
+
+        <a href="contact.html" class="btn">Join KR Melody</a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h2>🎵 KR Melody</h2>
+                <p>Music Academy</p>
+            </div>
+
+            <div>
+                <p>© 2026 KR Melody Music Academy</p>
+                <p>Learn • Play • Perform</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

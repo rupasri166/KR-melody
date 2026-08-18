@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enrollment | KR Melody Music Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🎵 <span>KR Melody</span>
+            <small>Music Academy</small>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Enrollment Hero -->
+    <section class="page-hero">
+
+        <div>
+
+            <p class="section-label">JOIN KR MELODY</p>
+
+            <h1>Begin Your <span>Musical Journey</span></h1>
+
+            <p>
+                Enroll today and let your passion become music.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Enrollment Section -->
+    <section class="enrollment-section">
+
+        <div class="enrollment-content">
+
+            <p class="section-label">ENROLL NOW</p>
+
+            <h2>
+                Become Part of
+                <span>KR Melody</span>
+            </h2>
+
+            <p>
+                Fill in your details below and choose the course
+                you would like to learn.
+            </p>
+
+            <div class="enrollment-features">
+
+                <div>
+                    🎵
+                    <strong>Expert Guidance</strong>
+                </div>
+
+                <div>
+                    🎶
+                    <strong>Flexible Timings</strong>
+                </div>
+
+                <div>
+                    ✨
+                    <strong>Performance Opportunities</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Enrollment Form -->
+        <div class="enrollment-form">
+
+            <h2>Enrollment Form</h2>
+
+            <p>
+                Please provide your details below.
+            </p>
+
+            <form
+                id="enrollmentForm"
+                onsubmit="submitEnrollment(event)">
+
+                <div class="form-group">
+
+                    <label for="studentName">
+                        Student Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="studentName"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="studentEmail">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="studentEmail"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="studentPhone">
+                            Phone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="studentPhone"
+                            placeholder="Enter phone number"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="enrollCourse">
+                        Select Course
+                    </label>
+
+                    <select id="enrollCourse" required>
+
+                        <option value="">
+                            Choose a course
+                        </option>
+
+                        <option value="Vocal Singing">
+                            Vocal Singing
+                        </option>
+
+                        <option value="Keyboard">
+                            Keyboard
+                        </option>
+
+                        <option value="Piano">
+                            Piano
+                        </option>
+
+                        <option value="Guitar">
+                            Guitar
+                        </option>
+
+                        <option value="Violin">
+                            Violin
+                        </option>
+
+                        <option value="Drums">
+                            Drums
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="timing">
+                        Preferred Timing
+                    </label>
+
+                    <select id="timing" required>
+
+                        <option value="">
+                            Select timing
+                        </option>
+
+                        <option value="Morning">
+                            Morning
+                        </option>
+
+                        <option value="Afternoon">
+                            Afternoon
+                        </option>
+
+                        <option value="Evening">
+                            Evening
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="experience">
+                        Previous Music Experience
+                    </label>
+
+                    <select id="experience" required>
+
+                        <option value="">
+                            Select experience
+                        </option>
+
+                        <option value="Beginner">
+                            Beginner
+                        </option>
+
+                        <option value="Intermediate">
+                            Intermediate
+                        </option>
+
+                        <option value="Advanced">
+                            Advanced
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-btn">
+
+                    Complete Enrollment →
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <h2>
+            Your Music. Your Journey.
+        </h2>
+
+        <p>
+            Take the first step towards becoming a confident musician.
+        </p>
+
+        <a href="courses.html" class="btn">
+            Explore Courses
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>🎵 KR Melody</h2>
+
+                <p>
+                    Music Academy
+                </p>
+
+            </div>
+
+            <div>
+
+                <p>
+                    © 2026 KR Melody Music Academy
+                </p>
+
+                <p>
+                    Learn • Play • Perform
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
